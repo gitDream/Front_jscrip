@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<dev>
+    <button id="btn_ona" style="height: 32px;" >
+        消息盒子测试
+    </button>
+</dev>
+{% endblock content%}
+
+{% block scripts %}
+
+<script type="text/javascript">
+$(function () {
+    $('#btn_ona').click(function () {
+        messagebox()
+    })
+})
+</script>
+{% endblock scripts%}
